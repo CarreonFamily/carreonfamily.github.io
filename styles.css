@@ -1,12 +1,29 @@
 *{
   font-family: 'Lato';
 }
-body {
+/* body {
   margin: 0;
   padding: 0;
   background: #DFD1B9;
   color: #333;
   text-align: center;
+} */
+:root {
+  --cream-light: #f6f2eb;
+  --cream-soft: #efe8dd;
+  --gold-tan: #DFD1B9;
+  --text-dark: #6b5c52;
+  --shadow-soft: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-dark);
+  background: url('../carreonfamily.github.io/images/flowers.png') top left no-repeat,
+              /* url('../carreonfamily.github.io/images/flowers.png') bottom right no-repeat, */
+              var(--cream-light);
+  background-size: 50vh 50vw;
 }
 a{
   text-decoration: none;
@@ -87,3 +104,59 @@ a{
   width: 30px;
   height: 30px;
 }
+/* Details Section */
+.details {
+  padding: 60px 15%;
+  /* background: url('../carreonfamily.github.io/images/flowers.png') top left no-repeat; */
+  background-size: 300px;
+}
+
+.details h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.details p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+/* Info boxes */
+.info-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info {
+  background: var(--pink-soft);
+  border: 1px solid var(--gold-tan);
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 10px var(--flower-shadow);
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+/* .footer {
+  text-align: center;
+  padding: 20px 0;
+  background: var(--gold-tan);
+  color: #5a4d44;
+  margin-top: 40px;
+  font-size: 1.1rem;
+} */
