@@ -3,13 +3,7 @@
   width: 100vw 100vh;
   height: 100vw 100vh;
 }
-/* body {
-  margin: 0;
-  padding: 0;
-  background: #DFD1B9;
-  color: #333;
-  text-align: center;
-} */
+
 :root {
   --cream-light: #f6f2eb;
   --cream-soft: #efe8dd;
@@ -27,14 +21,17 @@ body {
               var(--cream-light);
   background-size: 70vh 70vw;
 }
+
 a{
   text-decoration: none;
   color: black;
 }
+
 .links a:hover{
   color: rgb(69, 69, 69);
   opacity: .7;
 }
+
 .menu{
   display: flex;
   justify-content: center;
@@ -153,12 +150,4 @@ a{
   font-size: 1.1rem;
 }
 
-/* Footer */
-/* .footer {
-  text-align: center;
-  padding: 20px 0;
-  background: var(--gold-tan);
-  color: #5a4d44;
-  margin-top: 40px;
-  font-size: 1.1rem;
-} */
+/* OUR STORY */
