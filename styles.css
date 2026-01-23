@@ -1,146 +1,81 @@
-*{
-  font-family: 'Playfair Display';
-}
-
 :root {
   --cream-light: #f6f2eb;
   --cream-soft: #efe8dd;
-  --gold-tan: #DFD1B9;
   --text-dark: #6b5c52;
-  --shadow-soft: rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
 body {
-  /* margin: 0; */
-  font-family: "Cormorant Garamond", serif;
-  color: var(--text-dark);
-  background: var(--cream-light);
-  /* background-size: 70vh 70vw; */
+margin: 0;
+background: var(--cream-light);
+color: var(--text-dark);
 }
 
-a{
-  text-decoration: none;
-  color: black;
+
+.site-header {
+text-align: center;
+padding: 20px 0;
 }
 
-.links a:hover{
-  color: rgb(69, 69, 69);
-  opacity: .7;
+
+.nav-links a {
+margin: 0 12px;
+text-decoration: none;
+color: #000;
 }
 
-.menu{
-  display: grid;
-  justify-content: center;
-  /* margin: auto; */
+
+.nav-links a:hover {
+opacity: 0.7;
 }
 
-.menu, h4{
-  padding: 0px 7px 0px 7px;
-}
 
-.header{
-  text-align: center;
-}
-
-.links h4{
-  display: inline-block;
-  margin: 25px 0px 25px 0px;
-  padding: 0px;
-}
-
-.links a{
-  margin-right: 20px;
-}
-
-.separator{
-  padding: 1px 0px 1px 0px;
-  margin:15px 0px 15px 0px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-}
-
-#welcome{
-  text-align: center;
-  font-size: xx-large;
-}
 .intro {
-  display: flex;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 40px;
+padding: 40px 20px;
 }
 
-.intro p{
-  padding: 0px 40px;
-  margin: 0px;
-}
-.homepic {
-  display: flex;
-  align-items: center;
+
+.homepic img {
+max-width: 320px;
+border-radius: 20px;
 }
 
-.homepic img{
-  border-radius: 25px;
-  max-width: 50vh;
-  align-items: left;
-  margin: 0px 10px;
-}
 
-/* Details Section */
 .details {
-  align-items: center;
-  padding-bottom: 30px;
-  text-align: center;
+max-width: 500px;
+text-align: center;
 }
 
-.details p {
-  font-size: 1.2rem;
-}
 
 .details h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: var(--text-dark);
+font-size: 2.5rem;
 }
 
-/* Info boxes */
+
 .info-boxes {
-  display: grid;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px;;
+display: grid;
+/* gap: 20px; */
+margin-top: 30px;
 }
 
-/* .info {
-  padding: 20px 30px;
-  width: 260px;
-  text-align: center;
-  box-shadow: 0 4px 10px var(--flower-shadow);
-} */
 
 .info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+margin-bottom: 6px;
 }
 
-.info p {
-  font-size: 1.1rem;
-}
-
-/* OUR STORY */
 
 .story {
-  text-align: center;
-  align-items: center;
-  font-size: x-large;
-  display: flexbox;
-  text-wrap: pretty;
-  margin: 0px 100px;
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+text-align: center;
+font-size: 1.2rem;
 }
-
-.rules {
-  text-align: center;
-  align-items: center;
-  font-size: x-large;
-  display: flexbox;
-  text-wrap: pretty;
-  margin: 0px 100px;
-}
-
