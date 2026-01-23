@@ -1,7 +1,5 @@
 *{
-  font-family: 'Lato';
-  width: 100vw 100vh;
-  height: 100vw 100vh;
+  font-family: 'Playfair Display';
 }
 
 :root {
@@ -13,13 +11,11 @@
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: "Cormorant Garamond", serif;
   color: var(--text-dark);
-  background: url('../carreonfamily.github.io/images/flowers.png') top left no-repeat,
-              url('../carreonfamily.github.io/images/flowers-180.png') bottom right no-repeat,
-              var(--cream-light);
-  background-size: 70vh 70vw;
+  background: var(--cream-light);
+  /* background-size: 70vh 70vw; */
 }
 
 a{
@@ -33,12 +29,12 @@ a{
 }
 
 .menu{
-  display: flex;
+  display: grid;
   justify-content: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
-.menu, h3{
+.menu, h4{
   padding: 0px 7px 0px 7px;
 }
 
@@ -63,83 +59,61 @@ a{
   border-top: 1px solid white;
 }
 
-.intro{
-  display: grid;
-  justify-content: center;
-}
-
 #welcome{
   text-align: center;
   font-size: xx-large;
 }
+.intro {
+  display: flex;
+}
 
 .intro p{
-  text-align: center;
-  padding: 0px;
+  padding: 0px 40px;
   margin: 0px;
 }
+.homepic {
+  display: flex;
+  align-items: center;
+}
 
-.intro img{
-  width: 240px;
+.homepic img{
   border-radius: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* width: ; */
+  max-width: 50vh;
+  align-items: left;
+  margin: 0px 10px;
 }
 
-#scripture{
-  font-size: medium;
-}
-
-.header-2{
+/* Details Section */
+.details {
+  align-items: center;
+  padding-bottom: 30px;
   text-align: center;
 }
 
-.header-2 img{
-  display: flex;
-  justify-content:baseline;
-  rotate: 90deg;
-  width: 30px;
-  height: 30px;
-}
-/* Details Section */
-.details {
-  padding: 60px 15%;
-  /* background: url('../carreonfamily.github.io/images/flowers.png') top left no-repeat; */
-  background-size: 300px;
+.details p {
+  font-size: 1.2rem;
 }
 
 .details h2 {
   font-size: 2.5rem;
-  text-align: center;
   margin-bottom: 10px;
   color: var(--text-dark);
 }
 
-.details p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 50px;
-}
-
 /* Info boxes */
 .info-boxes {
-  display: flex;
+  display: grid;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px;;
 }
 
-.info {
-  background: var(--pink-soft);
-  border: 1px solid var(--gold-tan);
-  border-radius: 12px;
+/* .info {
   padding: 20px 30px;
   width: 260px;
   text-align: center;
   box-shadow: 0 4px 10px var(--flower-shadow);
-}
+} */
 
 .info h3 {
   font-size: 1.8rem;
@@ -151,3 +125,22 @@ a{
 }
 
 /* OUR STORY */
+
+.story {
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+  display: flexbox;
+  text-wrap: pretty;
+  margin: 0px 100px;
+}
+
+.rules {
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+  display: flexbox;
+  text-wrap: pretty;
+  margin: 0px 100px;
+}
+
