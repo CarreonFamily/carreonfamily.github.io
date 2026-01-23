@@ -79,3 +79,33 @@ padding: 0 20px;
 text-align: center;
 font-size: 1.2rem;
 }
+
+.countdown {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.timer div {
+  background: #efe8dd;
+  padding: 16px 14px;
+  border-radius: 12px;
+  min-width: 70px;
+}
+
+.timer span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.timer small {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}

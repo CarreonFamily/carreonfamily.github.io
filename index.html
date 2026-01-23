@@ -15,6 +15,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
+<script>
+  const weddingDate = new Date("July 30, 2026 18:00:00").getTime();
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance < 0) return;
+
+    document.getElementById("days").innerText =
+      Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    document.getElementById("hours").innerText =
+      Math.floor((distance / (1000 * 60 * 60)) % 24);
+
+    document.getElementById("minutes").innerText =
+      Math.floor((distance / (1000 * 60)) % 60);
+
+    document.getElementById("seconds").innerText =
+      Math.floor((distance / 1000) % 60);
+  }, 1000);
+</script>
+
 <body>
 
 
@@ -32,6 +55,16 @@
   <main class="intro">
     <section class="homepic">
       <img src="../carreonfamily.github.io/images/stdPicture.jpeg" alt="Naomi and Otoniel" />
+
+      <section class="countdown"></section>
+        <h2>Countdown to Our Wedding</h2>
+        <div class="timer">
+          <div><span id="days">0</span><small>Days</small></div>
+          <div><span id="hours">0</span><small>Hours</small></div>
+          <div><span id="minutes">0</span><small>Minutes</small></div>
+          <div><span id="seconds">0</span><small>Seconds</small></div>
+        </div>
+      </section>
     </section>
 
 
@@ -41,7 +74,6 @@
         We are so excited to celebrate this special day with the people we love most.
         Please explore our website for details about the ceremony, reception, and more.
       </p>
-
 
       <div class="info-boxes">
         <div class="info">
