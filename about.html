@@ -14,9 +14,9 @@
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="ourstory.html">Our Story</a>
-            <a href="https://withjoy.com/naomi-and-otoniel/registry">Registry</a>
-            <a href="https://withjoy.com/naomi-and-otoniel/rsvp">RSVP</a>
+            <!-- <a href="ourstory.html">Our Story</a> -->
+            <!-- <a href="https://withjoy.com/naomi-and-otoniel/registry">Registry</a>
+            <a href="https://withjoy.com/naomi-and-otoniel/rsvp">RSVP</a> -->
         </nav>
     </header>
 
@@ -25,9 +25,135 @@
         <p>
             This will be a dry wedding.<br />
             Adults-only celebration — we kindly request no children.<br />
-            Information on hotels will be announced soon.
-        </p>
+            Your love and support mean so much to us. If you would like to give toward the beginning of our married life, we welcome contributions through <a href="#" id="zelleLink">Zelle</a> <a href="https://venmo.com/u/otoniel_2003">Venmo,</a> or <a href="https://cash.app/$Otoniel2003">CashApp</a>!
+        </p><br>
+        <h3>Our Story</h3>
+        <p>
+            Otoniel and I met at Azusa Pacific University at a meet & greet event for our minor, Honors Humanities. We
+            became friends and would study together. Early in our friendship he learned that I had never been to Costco
+            which of course led to our first of many monthly Costco trips. He began attending my family’s church and we
+            would carpool together every week. After a while I became so used to having him around it felt like something
+            was missing when he wasn’t there. We continued to develop our friendship and took a few road trips together to
+            see our families for the holidays. Incidentally, this is when we met each other’s extended family. Near this
+            time we became very involved with the church and served on a mission trip together to Mexico. One week after
+            that trip we officially started dating and it’s been a joy ever since.
+            From that point on we have celebrated many holidays, birthdays, and life stages together. We have served on
+            many short term missions trips both together and separately. Otoniel proposed April 6th and it was the easiest
+            yes. That May we walked the stage together at graduation. His degree being in Computer science and Honors
+            Humanities while I received a degree in Social work and a minor in Honors Humanities. After college we knew the
+            Lord had called us to Washington for a 9 month ministry school. That is where we are now until May and it has
+            been incredibly rewarding being able to worship, pray, study, and grow together during our engagement. In this
+            season we are in pre marital counseling, gleaning from a strong couple in the faith while we continue our
+            studies, prepare for a mission trip to Brazil, and plan a wedding. We are so grateful for the opportunity to
+            celebrate this joyous union with people we love who have been there along the way.
+            <br><br>
+            Blessings,<br>
+            Naomi & Otoniel
+         </p>
     </main>
+
+    <div id="zelleModal" class="modal">
+        <div class="modal-content">
+      
+          <span class="close">&times;</span>
+      
+          <h2>Zelle Information</h2>
+      
+          <p>Thank you so much for your love and support!</p>
+      
+          <p>
+            Send contributions to:
+            <br>
+            <strong id="zelleNumber">(650) 679-3797</strong>
+          </p>
+      
+          <button id="copyBtn" class="copy-btn">Copy Number</button>
+      
+          <p class="small-text">
+            Please include your name in the memo so we know who it’s from ❤️
+          </p>
+      
+        </div>
+      </div>
+      
+      <div id="toast" class="toast">Copied to clipboard!</div>
+
+      <!-- <script>
+        const modal = document.getElementById("zelleModal");
+        const link = document.getElementById("zelleLink");
+        const closeBtn = document.querySelector(".close");
+        const copyBtn = document.getElementById("copyBtn");
+        const zelleNumber = document.getElementById("zelleNumber");
+        const toast = document.getElementById("toast");
+      
+        function openModal() {
+          modal.style.display = "block";
+        }
+      
+        function closeModal() {
+          modal.style.display = "none";
+        }
+      
+        function showToast() {
+          toast.classList.add("show");
+          setTimeout(() => {
+            toast.classList.remove("show");
+          }, 2000);
+        }
+      
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          openModal();
+        });
+      
+        closeBtn.addEventListener("click", closeModal);
+      
+        window.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      
+        copyBtn.addEventListener("click", function () {
+          navigator.clipboard.writeText(zelleNumber.textContent)
+            .then(() => {
+              showToast();
+            });
+        });
+      </script> -->
+
+      <script>
+        const modal = document.getElementById("zelleModal");
+        const link = document.getElementById("zelleLink");
+        const closeBtn = document.querySelector(".close");
+      
+        function openModal() {
+          modal.classList.add("show");
+        }
+      
+        function closeModal() {
+          modal.classList.remove("show");
+        }
+      
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          openModal();
+        });
+      
+        closeBtn.addEventListener("click", closeModal);
+      
+        window.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      
+        window.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeModal();
+          }
+        });
+      </script>
 
 </body>
 

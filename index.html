@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<script>
+<!-- <script>
   const weddingDate = new Date("July 30, 2026 18:00:00").getTime();
 
   setInterval(() => {
@@ -36,7 +36,7 @@
     document.getElementById("seconds").innerText =
       Math.floor((distance / 1000) % 60);
   }, 1000);
-</script>
+</script> -->
 
 <body>
 
@@ -45,9 +45,9 @@
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="ourstory.html">Our Story</a>
-      <a href="https://withjoy.com/naomi-and-otoniel/registry">Registry</a>
-      <a href="https://withjoy.com/naomi-and-otoniel/rsvp">RSVP</a>
+      <!-- <a href="ourstory.html">Our Story</a> -->
+      <!-- <a href="https://withjoy.com/naomi-and-otoniel/registry">Registry</a>
+      <a href="https://withjoy.com/naomi-and-otoniel/rsvp">RSVP</a> -->
     </nav>
   </header>
 
@@ -56,8 +56,9 @@
     <section class="homepic">
       <img src="../carreonfamily.github.io/images/stdPicture.jpeg" alt="Naomi and Otoniel" />
 
-      <section class="countdown"></section>
+      <section class="countdown">
         <h2>Countdown to Our Wedding</h2>
+
         <div class="timer">
           <div><span id="days">0</span><small>Days</small></div>
           <div><span id="hours">0</span><small>Hours</small></div>
@@ -89,9 +90,41 @@
           <p>6:00 PM Ceremony • 6:30 PM Reception</p>
         </div>
       </div>
+
+      <div class="home-buttons">
+        <a class="home-btn" href="https://withjoy.com/naomi-and-otoniel/rsvp" target="_blank">
+          RSVP
+        </a>
+      
+        <a class="home-btn" href="https://withjoy.com/naomi-and-otoniel/registry" target="_blank">
+          View Registry
+        </a>
+      </div>
     </section>
   </main>
 
+  <script>
+    const weddingDate = new Date("July 30, 2026 18:00:00").getTime();
+  
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+  
+      if (distance < 0) return;
+  
+      document.getElementById("days").innerText =
+        Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+      document.getElementById("hours").innerText =
+        Math.floor((distance / (1000 * 60 * 60)) % 24);
+  
+      document.getElementById("minutes").innerText =
+        Math.floor((distance / (1000 * 60)) % 60);
+  
+      document.getElementById("seconds").innerText =
+        Math.floor((distance / 1000) % 60);
+    }, 1000);
+  </script>
 
 </body>
 
